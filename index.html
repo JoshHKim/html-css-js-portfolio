@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,307 +8,149 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
-<body>
-    <nav id="desktop-nav">
-        <div class = "logo">Joshua Kim</div>
-        <div>
-            <ul class = "nav-links">
-                <li><a href=#about>About</a></li>
-                <li><a href=#experience>Experience</a></li> 
-                <li><a href=#projects>Projects</a></li>
-                <li><a href=#contact>Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class = "logo">Joshua Kim</div>
-        <div class = "hamburger-menu">
-            <div class= "hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class = "menu-links">
-                <li><a href=#about onclick="toggleMenu()">About</a></li>
-                <li><a href=#experience onclick="toggleMenu()">Experience</a></li> 
-                <li><a href=#projects onclick="toggleMenu()">Projects</a></li>
-                <li><a href=#contact onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="profile-pic-container">
-            <img src="./assets/Joshua_Kim_Profile_Pic.png" alt="Joshua Kim profile picture" class="profile-pic">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1"></p>
-            <h1 class="title">Software Developer</h1>
-            <p class="section__text__p2">Hello! I am Joshua Kim, a passionate software developer</p>
-            <div class="btn-container">
-                <button class="button" onclick="window.open('./assets/Joshua_Kim_Resume.pdf')">
-                    View Resume
-                </button>
-                <button class="button" onclick="location.href='./#contact'">
-                    Contact Me
-                </button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt = "My LinkedIn profile" class = "icon" onclick="location.href='https://www.linkedin.com/in/JoshuaHKim/'">
-                <img src="./assets/github.png" alt = "My GitHub" class = "icon" onclick="location.href='https://github.com/JoshHKim'">
 
-            </div>
-        </div>
-    </section>
-    <section id ="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/gaming.png" alt="Profile picture" class="about-pic">
-            </div>
-            <div class="about-details-containers">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
-                        <h3>Experience</h3>
-                        <p>Software Engineering Intern - Infotech 2023</br></br>Teacher's Assistant - University of Florida 2023</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon" class="icon">
-                        <h3>Education</h3>
-                        <p>B.A. University of Florida 2020-2024<br/><br/> <br/> Major: Computer Science <br/>Minor: Math</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/esports.png" alt="Education icon" class="icon">
-                        <h3>Hobbies</h3>
-                        <p>Weightlifting <br><br/>Guitar <br><br/> Volleyball <br><br>Video Games</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Languages</h2>
-                    <div class="article-container">
-                        <article>
-                            <img 
-                                src="./assets/checkmark.png"
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>C++</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                                src="./assets/checkmark.png"
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Java</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                                src="./assets/checkmark.png"
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Ruby</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                                src="./assets/checkmark.png"
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Python</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                                src="./assets/checkmark.png"
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>SQL</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frameworks</h2>
-                    <div class="article-container">
-                        <article>
-                            <img 
-                                src="./assets/checkmark.png"
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Rails</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                                src="./assets/checkmark.png"
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>AWS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                                src="./assets/checkmark.png"
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Agile Dev</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                                src="./assets/checkmark.png"
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>CSS/HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                                src="./assets/checkmark.png"
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Git</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="project-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/edmedly.png" alt="Project 1" class="project-img"/>
-                    </div>
-            <h2 class="experience-sub-title project-title">EdMedly</h2>
-            <div class="btn-container">
-              <button
-                class="button btn-color-2 project-btn"
-                onclick="location.href='https://github.com/JoshHKim/EdMedley'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/generatecoverart.PNG"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">GenerateCoverArt</h2>
-            <div class="btn-container">
-              <button
-                class="button btn-color-2 project-btn"
-                onclick="location.href='https://github.com/JoshHKim/GenerateCoverArt'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/membersonly.PNG"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Members Only</h2>
-            <div class="btn-container">
-              <button
-                class="button btn-color-2 project-btn"
-                onclick="location.href='https://github.com/JoshHKim/Members-Only'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-            
-          </div>
-        </div>
-      </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon">
-                <p>
-                    <a href="mailto:joshuahanbiekim@gmail.com">joshuahanbiekim@gmail.com</a>
-                </p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
-                <p>
-                    <a href="https://www.linkedin.com/in/JoshuaHKim/">LinkedIn</a>
-                </p>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class = "nav-links">
-                    <li><a href=#about>About</a></li>
-                    <li><a href=#experience>Experience</a></li> 
-                    <li><a href=#projects>Projects</a></li>
-                    <li><a href=#contact>Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>2024 Joshua Kim</p>
-    </footer>
-    <script src="script.js"></script>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="logo">Joshua Kim</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="profile" class="hero">
+  <div class="hero-left">
+    <img src="./assets/Joshua_Kim_Profile_Pic.png" class="profile-pic">
+  </div>
+
+  <div class="hero-right">
+    <p class="subtitle">Software Engineer</p>
+    <h1 class="title">Joshua Kim</h1>
+    <p class="description">
+      Backend-focused software engineer specializing in scalable systems, distributed architecture, and cloud infrastructure (AWS).
+    </p>
+
+    <div class="btn-container">
+      <button onclick="window.open('./assets/Joshua_Kim_Resume.pdf')">Resume</button>
+      <button onclick="location.href='#contact'">Contact</button>
+    </div>
+
+    <div class="socials">
+      <img src="./assets/linkedin.png" onclick="location.href='https://www.linkedin.com/in/JoshuaHKim/'">
+      <img src="./assets/github.png" onclick="location.href='https://github.com/JoshHKim'">
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    Software Engineer with experience building backend systems, APIs, and data infrastructure.
+    I enjoy working on performance optimization, distributed systems, and scalable architecture.
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Experience</h3>
+      <p>FlexShopper, Novaprime, Infotech</p>
+    </div>
+
+    <div class="card">
+      <h3>Education</h3>
+      <p>University of Florida<br>Computer Science + Math</p>
+    </div>
+
+    <div class="card">
+      <h3>Interests</h3>
+      <p>Systems, AI, Backend Engineering</p>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <h2>Experience</h2>
+
+  <div class="timeline">
+
+    <div class="job">
+      <h3>Software Engineer — FlexShopper</h3>
+      <span>2024 – 2025</span>
+      <ul>
+        <li>Improved backend performance by 917% using Redis caching</li>
+        <li>Built microservices using RabbitMQ</li>
+        <li>Designed MongoDB → MySQL migration system</li>
+        <li>Built internal tools for non-technical users</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Implementation Engineer — Novaprime</h3>
+      <span>2025</span>
+      <ul>
+        <li>Built JSON rules engine for mortgage validation</li>
+        <li>Translated business logic into scalable systems</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Software Intern — Infotech</h3>
+      <span>2023</span>
+      <ul>
+        <li>Migrated 7M+ records to structured format</li>
+        <li>Improved document search functionality</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <h3>AI Image Identifier</h3>
+      <p>CNN model with 98% accuracy for real vs AI image classification.</p>
+      <a href="https://github.com/JoshHKim">GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>EdMedly</h3>
+      <p>Ruby on Rails platform for medical education workflows.</p>
+      <a href="https://github.com/JoshHKim/EdMedley">GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>GenerateCoverArt</h3>
+      <p>Automated music cover generation tool.</p>
+      <a href="https://github.com/JoshHKim/GenerateCoverArt">GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact</h2>
+
+  <p>Email: <a href="mailto:joshuahanbiekim@gmail.com">joshuahanbiekim@gmail.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/JoshuaHKim/">Profile</a></p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Joshua Kim</p>
+</footer>
+
 </body>
+
 </html>
