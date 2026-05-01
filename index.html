@@ -23,58 +23,79 @@
 </nav>
 
 <!-- HERO -->
-<section id="profile" class="hero">
+<section class="hero">
+
+  <!-- LEFT: Profile Image -->
   <div class="hero-left">
-    <img src="./assets/Joshua_Kim_Profile_Pic.png" class="profile-pic">
+    <img 
+      src="./assets/Joshua_Kim_Profile_Pic.png" 
+      alt="Joshua Kim profile picture"
+      class="profile-pic"
+    >
   </div>
 
+  <!-- RIGHT: Content -->
   <div class="hero-right">
-    <p class="subtitle">Software Engineer</p>
-    <h1 class="title">Joshua Kim</h1>
-    <p class="description">
-      Backend-focused software engineer specializing in scalable systems, distributed architecture, and cloud infrastructure (AWS).
+    <p class="eyebrow">Software Engineer</p>
+
+    <h1 class="hero-title">Joshua Kim</h1>
+
+    <p class="hero-subtitle">
+      Backend Engineer focused on scalable systems, distributed architecture, and cloud infrastructure.
     </p>
 
-    <div class="btn-container">
-      <button onclick="window.open('./assets/Joshua_Kim_Resume.pdf')">Resume</button>
-      <button onclick="location.href='#contact'">Contact</button>
+    <div class="hero-buttons">
+      <button onclick="window.open('./assets/Joshua_Kim_Resume.pdf')">
+        View Resume
+      </button>
+      <button onclick="location.href='#projects'">
+        View Work
+      </button>
     </div>
 
     <div class="socials">
-      <img src="./assets/linkedin.png" onclick="location.href='https://www.linkedin.com/in/JoshuaHKim/'">
-      <img src="./assets/github.png" onclick="location.href='https://github.com/JoshHKim'">
+      <img src="./assets/linkedin.png"
+        onclick="location.href='https://www.linkedin.com/in/JoshuaHKim/'">
+
+      <img src="./assets/github.png"
+        onclick="location.href='https://github.com/JoshHKim'">
     </div>
   </div>
+
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section">
-  <h2>About Me</h2>
-  <p>
-    Software Engineer with experience building backend systems, APIs, and data infrastructure.
-    I enjoy working on performance optimization, distributed systems, and scalable architecture.
+<section class="section" id="about">
+
+  <h2>About</h2>
+
+  <p class="about-text">
+    Software Engineer with experience building backend systems, microservices, and data infrastructure.
+    I specialize in performance optimization, system design, and production-scale architecture.
   </p>
 
-  <div class="cards">
-    <div class="card">
-      <h3>Experience</h3>
-      <p>FlexShopper, Novaprime, Infotech</p>
+  <div class="stats">
+    <div class="stat">
+      <h3>3+</h3>
+      <p>Professional Roles</p>
     </div>
 
-    <div class="card">
-      <h3>Education</h3>
-      <p>University of Florida<br>Computer Science + Math</p>
+    <div class="stat">
+      <h3>917%</h3>
+      <p>Performance Improvement</p>
     </div>
 
-    <div class="card">
-      <h3>Interests</h3>
-      <p>Systems, AI, Backend Engineering</p>
+    <div class="stat">
+      <h3>7M+</h3>
+      <p>Records Processed</p>
     </div>
   </div>
+
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience" class="section">
+<section class="section" id="experience">
+
   <h2>Experience</h2>
 
   <div class="timeline">
@@ -82,68 +103,76 @@
     <div class="job">
       <h3>Software Engineer — FlexShopper</h3>
       <span>2024 – 2025</span>
+
       <ul>
         <li>Improved backend performance by 917% using Redis caching</li>
-        <li>Built microservices using RabbitMQ</li>
-        <li>Designed MongoDB → MySQL migration system</li>
-        <li>Built internal tools for non-technical users</li>
+        <li>Designed MongoDB → MySQL migration architecture</li>
+        <li>Built RabbitMQ microservices for event-driven workflows</li>
+        <li>Created internal tools for non-technical users</li>
       </ul>
     </div>
 
     <div class="job">
       <h3>Implementation Engineer — Novaprime</h3>
       <span>2025</span>
+
       <ul>
-        <li>Built JSON rules engine for mortgage validation</li>
-        <li>Translated business logic into scalable systems</li>
+        <li>Built JSON-based rules engine for mortgage validation</li>
+        <li>Translated business logic into scalable system rules</li>
       </ul>
     </div>
 
     <div class="job">
       <h3>Software Intern — Infotech</h3>
       <span>2023</span>
+
       <ul>
-        <li>Migrated 7M+ records to structured format</li>
-        <li>Improved document search functionality</li>
+        <li>Migrated 7M+ records to structured data formats</li>
+        <li>Improved document search & reliability systems</li>
       </ul>
     </div>
 
   </div>
+
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="section">
+<section class="section" id="projects">
+
   <h2>Projects</h2>
 
   <div class="project-grid">
 
     <div class="project-card">
       <h3>AI Image Identifier</h3>
-      <p>CNN model with 98% accuracy for real vs AI image classification.</p>
+      <p>Deep learning model (CNN) achieving 98% accuracy on real vs AI image classification.</p>
       <a href="https://github.com/JoshHKim">GitHub</a>
     </div>
 
     <div class="project-card">
       <h3>EdMedly</h3>
-      <p>Ruby on Rails platform for medical education workflows.</p>
+      <p>Ruby on Rails platform for structured medical education workflows.</p>
       <a href="https://github.com/JoshHKim/EdMedley">GitHub</a>
     </div>
 
     <div class="project-card">
       <h3>GenerateCoverArt</h3>
-      <p>Automated music cover generation tool.</p>
-      <a href="https://github.com/JoshHKim/GenerateCoverArt">GitHub</a>
+      <p>Automated AI-driven music cover generation tool.</p>
+      <a href="https://github.com/JoshHKim">GitHub</a>
     </div>
 
   </div>
+
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section">
+<section class="section" id="contact">
+
   <h2>Contact</h2>
 
   <p>Email: <a href="mailto:joshuahanbiekim@gmail.com">joshuahanbiekim@gmail.com</a></p>
   <p>LinkedIn: <a href="https://www.linkedin.com/in/JoshuaHKim/">Profile</a></p>
+
 </section>
 
 <!-- FOOTER -->
